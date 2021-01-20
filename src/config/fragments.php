@@ -85,21 +85,6 @@ str;
             return htmlspecialchars($template);
         })(),
     ],
-    'link' => [
-        'type' => 'content',
-        'title' => '友情链接',
-        'template' => (function () {
-            $template = <<<'str'
-<div class="mb-3 p-3 bg-light">
-    <span class="font-weight-bold mr-2">友情链接</span>
-    {foreach $contents as $vo}
-        <a class="mr-2" href="{$vo.redirect_uri}" target="_blank">{$vo.title}</a>
-    {/foreach}
-</div>
-str;
-            return htmlspecialchars($template);
-        })(),
-    ],
     'gonggao' => [
         'type' => 'content',
         'title' => '公告',

@@ -11,5 +11,5 @@
         {include web/common/sidebar@ebcms/cms}
     </div>
 </div>
-{if function_exists('tpl_fragment')}{fragment 'ebcms.fragment.demo_link', '暂无'}{/if}
+{if function_exists('tpl_fragment')}{fragment 'ebcms.cms.link', '暂无'}{/if}
 {include web/common/footer@ebcms/cms}
